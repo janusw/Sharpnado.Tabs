@@ -7,15 +7,10 @@
     <Grid RowDefinitions="Auto,*">
         <tabs:TabHostView Grid.Row="0"
                           WidthRequest="370"
-                          HeightRequest="40"
                           Margin="0,2"
                           HorizontalOptions="Center"
                           VerticalOptions="Start"
-                          CornerRadius="10"
-                          IsSegmented="True"
-                          SegmentedHasSeparator="True"
-                          SelectedIndex="{Binding Source={x:Reference switcher}, Path=SelectedIndex, Mode=TwoWay}"
-                          TabType="Fixed">
+                          SelectedIndex="{Binding Source={x:Reference switcher}, Path=SelectedIndex, Mode=TwoWay}">
             <tabs:TabHostView.Tabs>
                 <tabs:SegmentedTabItem Label="Uno"
                                        SelectedLabelColor="Green"
